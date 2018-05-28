@@ -1,3 +1,4 @@
+package sabres;
 
 public class SabreDeLuz {
 	private String tipoCristal = null;

@@ -1,3 +1,4 @@
+package clas;
 
 public class Cla {
 	private String nomeCla = null;
@@ -6,6 +7,15 @@ public class Cla {
 	private int anoExtincao = 0;
 	private String periodoFundacao = null;
 	private String periodoExtincao = null;
+	
+	public Cla(String nomeCla, String instrutor, int anoFundacao, int anoExtincao, String periodoFundacao, String periodoExtincao){
+		this.nomeCla = nomeCla;
+		this.instrutor = instrutor;
+		this.anoFundacao = anoFundacao;
+		this.anoExtincao = anoExtincao;
+		this.periodoFundacao = periodoFundacao;
+		this.periodoExtincao = periodoExtincao;
+	}
 	
 	public void setNomeCla(String nomeCla){
 		this.nomeCla = nomeCla;

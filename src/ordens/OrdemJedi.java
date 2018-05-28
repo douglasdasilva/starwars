@@ -1,3 +1,4 @@
+package ordens;
 
 public class OrdemJedi {
 	private float percentualPaz = 0;

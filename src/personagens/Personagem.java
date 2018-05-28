@@ -1,10 +1,12 @@
+package personagens;
+import planetas.Planeta;
 
 public class Personagem {
 	private String nomePersonagem = null;
 	private String genero = null;
 	private String especie = null;
 	private int anoNascimento = 0;
-	private int anoMorte = 0;
+	private String periodoNascimento = null;
 	private Planeta planetaNascimento;
 	private boolean imortalidade = false;
 	private double campoVidencia = 0;
@@ -13,6 +15,22 @@ public class Personagem {
 	private int dominioSabre = 0;
 	private Personagem[] habilidades = null;
 	private float midichlorians = 0;
+	
+	public Personagem(String nomePersonagem, String genero, String especie, int anoNascimento, String periodoNascimento, Planeta planetaNascimento, boolean imortalidade, double campoVidencia, int qtdeVida, int dominioForca, int dominioSabre, Personagem[] habilidades, float midichlorians) {
+		this.nomePersonagem = nomePersonagem;
+		this.genero = genero;
+		this.especie = especie;
+		this.anoNascimento = anoNascimento;
+		this.periodoNascimento = periodoNascimento;
+		this.planetaNascimento = planetaNascimento;
+		this.imortalidade = imortalidade;
+		this.campoVidencia = campoVidencia;
+		this.qtdeVida = qtdeVida;
+		this.dominioForca = dominioForca;
+		this.dominioSabre = dominioSabre;
+		this.habilidades = habilidades;
+		this.midichlorians = midichlorians;
+	}
 	
 	public String getNomePersonagem() {
 		return nomePersonagem;
@@ -38,11 +56,11 @@ public class Personagem {
 	public void setAnoNascimento(int anoNascimento) {
 		this.anoNascimento = anoNascimento;
 	}
-	public int getAnoMorte() {
-		return anoMorte;
+	public String getPeriodoNascimento() {
+		return periodoNascimento;
 	}
-	public void setAnoMorte(int anoMorte) {
-		this.anoMorte = anoMorte;
+	public void setPeriodoNascimento(String periodoNascimento) {
+		this.periodoNascimento = periodoNascimento;
 	}
 	public Planeta getPlanetaNascimento() {
 		return planetaNascimento;

@@ -1,3 +1,4 @@
+package regimes;
 
 public class Regime {
 	private String nomeRegime = null;
@@ -7,6 +8,16 @@ public class Regime {
 	private String periodoFinal = null;
 	private String capital = null;
 	private String chefeEstado = null;
+	
+	public Regime(String nomeRegime, int anoInicio, int anoFinal, String periodoInicio, String periodoFinal, String capital, String chefeEstado) {
+		this.nomeRegime = nomeRegime;
+		this.anoInicio = anoInicio;
+		this.anoFinal = anoFinal;
+		this.periodoInicio = periodoInicio;
+		this.periodoFinal = periodoFinal;
+		this.capital = capital;
+		this.chefeEstado = chefeEstado;
+	}
 	
 	public void setNomeRegime(String nomeRegime){
 		this.nomeRegime = nomeRegime;

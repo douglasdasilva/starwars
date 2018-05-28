@@ -1,3 +1,4 @@
+package ordens;
 
 public class OrdemSith {
 	private float percentualRaiva = 0;

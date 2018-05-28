@@ -1,3 +1,4 @@
+package planetas;
 
 public class Planeta {
 	private String nomePlaneta = null;
@@ -44,5 +45,13 @@ public class Planeta {
 	
 	public String getRegime(){
 		return regime;
+	}
+	
+	public Planeta(String nomePlaneta, String cor, String sistema, double diametro, String regime) {
+		this.nomePlaneta = nomePlaneta;
+		this.cor = cor;
+		this.sistema = sistema;
+		this.diametro = diametro;
+		this.regime = regime;
 	}
 }
