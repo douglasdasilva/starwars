@@ -1,11 +1,15 @@
 package planetas;
 
+import java.awt.Color;
+import regimes.*;
+
 public class Planeta {
 	private String nomePlaneta = null;
-	private String cor = null;
+	private Color cor = null;
 	private String sistema = null;
 	private double diametro = 0;
-	private String regime = null;
+	private Regime regime = null;
+//	private String regime = null;
 	
 	public void setNomePlaneta(String nomePlaneta){
 		this.nomePlaneta = nomePlaneta;
@@ -23,11 +27,11 @@ public class Planeta {
 		return diametro;
 	}
 	
-	public void setCor(String cor){
+	public void setCor(Color cor){
 		this.cor = cor;
 	}
 	
-	public String getCor(){
+	public Color getCor(){
 		return cor;
 	}
 	
@@ -39,15 +43,15 @@ public class Planeta {
 		return sistema;
 	}
 	
-	public void setRegime(String regime){
+	public void setRegime(Regime regime){
 		this.regime = regime;
 	}
 	
-	public String getRegime(){
+	public Regime getRegime(){
 		return regime;
 	}
 	
-	public Planeta(String nomePlaneta, String cor, String sistema, double diametro, String regime) {
+	public Planeta(String nomePlaneta, Color cor, String sistema, double diametro, Regime regime) {
 		this.nomePlaneta = nomePlaneta;
 		this.cor = cor;
 		this.sistema = sistema;

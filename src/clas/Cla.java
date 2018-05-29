@@ -1,14 +1,16 @@
 package clas;
 
+import personagens.*;
+
 public class Cla {
 	private String nomeCla = null;
-	private String instrutor = null;
+	private Personagem instrutor = null;
 	private int anoFundacao = 0;
 	private int anoExtincao = 0;
 	private String periodoFundacao = null;
 	private String periodoExtincao = null;
 	
-	public Cla(String nomeCla, String instrutor, int anoFundacao, int anoExtincao, String periodoFundacao, String periodoExtincao){
+	public Cla(String nomeCla, Personagem instrutor, int anoFundacao, int anoExtincao, String periodoFundacao, String periodoExtincao){
 		this.nomeCla = nomeCla;
 		this.instrutor = instrutor;
 		this.anoFundacao = anoFundacao;
@@ -25,11 +27,11 @@ public class Cla {
 		return nomeCla;
 	}
 	
-	public void setInstrutor(String instrutor){
+	public void setInstrutor(Personagem instrutor){
 		this.instrutor = instrutor;
 	}
 	
-	public String getInstrutor(){
+	public Personagem getInstrutor(){
 		return instrutor;
 	}
 	

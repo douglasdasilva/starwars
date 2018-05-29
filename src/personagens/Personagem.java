@@ -109,5 +109,8 @@ public class Personagem {
 	}
 	public void setMidichlorians(float midichlorians) {
 		this.midichlorians = midichlorians;
-	}	
+	}
+	public boolean estaVivo() {
+		return qtdeVida > 0;
+	}
 }
